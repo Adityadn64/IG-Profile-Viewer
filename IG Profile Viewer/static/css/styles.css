@@ -1,0 +1,321 @@
+body {
+    transition: all 0.5s;
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    transition: all 0.5s;
+    font-size: 1.5rem;
+}
+
+form {
+    transition: all 0.5s;
+    max-width: 400px;
+    margin: auto;
+}
+
+button {
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: royalblue;
+    border-color: royalblue;
+    transition: all 0.5s;
+    display: flow;
+}
+
+input, .form-control {
+    border: 3px solid #ced4da;
+}
+
+input:user-valid {
+    border: 3px solid yellowgreen;
+}
+
+input:user-invalid {
+    border: 3px solid salmon;
+}
+
+.connect {
+    cursor: pointer;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.download-button.Video {
+    left: 20%;
+}
+
+.center_C {
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s;
+}
+
+.slposts:hover img, .slposts:hover video {
+    object-fit: scale-down;
+}
+
+.download-button, .p_Video, .u_Volume {
+    z-index: 4;
+    position: absolute;
+    top: 50%;  /* Posisi vertikal di tengah thumbnail */
+    left: 50%;  /* Posisi horizontal di tengah thumbnail */
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: all 0.5s;
+}
+
+.u_Volume {
+    left: 80%;
+}
+
+.info-button {
+    display: none;
+    color: #eee;
+    z-index: 201;
+    position: absolute;
+    top: 5%;
+    left: 87.5%;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.slposts:hover .download-button, .slposts:hover .p_Video, .slposts:hover .info-button, .slposts:hover .u_Volume{
+    display: block;
+}
+
+.cancelDownloadButton {
+    display: none;
+}
+
+.cPost-dc {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cPost-dc .download-button {
+    position: relative;
+    inset: 0;
+    transform: none;
+    margin: 0;
+}
+
+.container.mt-5{
+    transition: all 0.5s;
+    background-color: #eee;
+    padding: 2.5rem;
+    border-radius: 50px;
+}
+
+.row.data {
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    transition: all 0.5s;
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-pic {
+    transition: all 0.5s;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#profilepic #DownloadButton {
+    margin-bottom: 20px;
+}
+
+#profilepic:hover #DownloadButton {
+    display: block;
+}
+
+.iguser {
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#copyusername {
+    cursor: pointer;
+}
+
+#copyusername:active {
+    color: green;
+}
+
+.col-md-6 {
+    transition: all 0.5s;
+    max-width: 100%;
+}
+
+.post-container {
+    transition: all 0.5s;
+    list-style: none;
+    padding: 0;
+    position: relative;  /* Menetapkan posisi relatif untuk menentukan posisi absolut */
+}
+
+.card {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.post-item {
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    width: 100%;
+    overflow: hidden;  /* Mengatasi masalah overflow pada posisi absolut tombol download */
+}
+
+.post-item:hover img, .post-item:hover video {
+    filter: brightness(50%);
+}
+
+.slposts, #profilepic {
+    cursor: pointer;
+}
+
+.post-item img, .post-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.post-image {
+    transition: all 0.5s;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.post-video {
+    transition: all 0.5s;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.check-mark {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: transparent;
+}
+
+.check-mark svg, .info-button svg, .download-button svg, .p_Video svg {
+    border: 3px solid #eee;
+    border-radius: 50px;
+    background-color: #eee;
+}
+
+.download-button svg, .u_Volume svg {
+    color: #eee;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.p_Video svg {
+    color: #eee;
+    background-color: transparent;
+}
+
+.info-button svg {
+    color: royalblue;
+}
+
+.postsdata {
+    display: none;
+    border: 0 solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 200;
+    filter: opacity(0.75);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease 0s;
+    background-color: rgba(238, 238, 238);
+    width: 85%;
+    height: auto;
+}
+
+.total-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+#chooseposts {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    border: 0 solid #333;
+    border-radius: 10px;
+    z-index: 200;
+    filter: opacity(0.75);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease 0s;
+    background-color: rgba(238, 238, 238);
+    height: auto;
+}
+
+.caption {
+    transition: all 0.5s;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.caption-container.show-more .caption {
+    transition: all 0.5s;
+    -webkit-line-clamp: initial;
+}
+
+.read-more {
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: underline;
+}
